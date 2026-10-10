@@ -1,4 +1,4 @@
-# 3D Multispecialist Hospital — Management System
+# Multispecialist Hospital — Management System
 
 A hospital admissions dashboard: patients are registered into an emergency-priority
 queue, allocated beds and doctors, discharged with an itemised bill, and tracked
