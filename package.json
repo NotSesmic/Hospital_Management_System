@@ -1,0 +1,56 @@
+{
+  "name": "hospital",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "pg": "^8.23.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "gh-pages": "^6.3.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run api\" \"react-scripts start\"",
+    "api": "node server.js",
+    "db:setup": "node db/setup.js",
+    "db:setup:empty": "node db/setup.js --no-demo",
+    "db:reset": "node db/setup.js --reset",
+    "build": "react-scripts build",
+    "serve": "npm run build && node server.js",
+    "test": "react-scripts test",
+    "test:db": "node --test --test-concurrency=1 tests/01_rules_parity.test.js tests/02_admission.test.js tests/03_simulation_auth.test.js tests/04_api.test.js",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "proxy": "http://localhost:4000",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

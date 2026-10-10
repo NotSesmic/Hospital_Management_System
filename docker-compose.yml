@@ -1,0 +1,13 @@
+# Optional: run PostgreSQL in Docker instead of installing it.
+#   docker compose up -d && npm run db:setup
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - hospital-pgdata:/var/lib/postgresql/data
+volumes:
+  hospital-pgdata:
