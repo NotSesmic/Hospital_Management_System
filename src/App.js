@@ -343,7 +343,7 @@ function App() {
           <form className="auth-card" onSubmit={(e) => { e.preventDefault(); submit(); }}>
             <div className="logo auth-logo">
               <div className="logo-icon"><span className="logo-heart">✚</span></div>
-              3D <span>MULTISPECIALIST HOSPITAL</span>
+              <span>MULTISPECIALIST HOSPITAL</span>
             </div>
             <h2>{authMode === 'signup' ? 'Create account' : 'Welcome back'}</h2>
             <p className="auth-sub">Sign in to access the hospital dashboard.</p>
@@ -377,7 +377,7 @@ function App() {
           <div className="logo-icon">
             <span className="logo-heart">✚</span>
           </div>
-          3D <span>MULTISPECIALIST HOSPITAL</span>
+          <span>MULTISPECIALIST HOSPITAL</span>
         </div>
         <div className="header-stats">
           <div className="hstat"><strong>{currentUser.name}</strong>{currentUser.email}</div>
@@ -821,8 +821,8 @@ function App() {
             <div className="panel active">
               <div className="page-title">About Us</div>
               <div className="card" style={{ marginBottom: '20px' }}>
-                <div className="card-title">Welcome to 3D MULTISPECIALIST HOSPITAL</div>
-                <p className="about-text">3D MULTISPECIALIST HOSPITAL is a premier multi-specialty healthcare institution dedicated to providing top-tier medical services. With a heavy focus on emergency response, critical care, and patient-first methodologies, we strive to achieve medical excellence in every facet of treatment.</p>
+                <div className="card-title">Welcome to MULTISPECIALIST HOSPITAL</div>
+                <p className="about-text">MULTISPECIALIST HOSPITAL is a premier multi-specialty healthcare institution dedicated to providing top-tier medical services. With a heavy focus on emergency response, critical care, and patient-first methodologies, we strive to achieve medical excellence in every facet of treatment.</p>
 
                 <h3 style={{ marginTop: '20px', marginBottom: '10px', fontSize: '1rem' }}>Our History</h3>
                 <p className="about-text">The hospital started as a small private clinic and has since blossomed into a monumental 300-bed facility equipped with the latest medical technology. Through relentless growth, we have expanded our capacity while successfully decreasing wait-times, setting a new benchmark for proactive and empathetic patient care.</p>
@@ -836,8 +836,8 @@ function App() {
                   </div>
                   <div>
                     <strong>Email:</strong><br />
-                    contact@3dhospital.com<br />
-                    emergency@3dhospital.com
+                    contact@hospital.com<br />
+                    emergency@hospital.com
                   </div>
                   <div>
                     <strong>Address:</strong><br />
